@@ -12,7 +12,6 @@ def part1():
     data = getFile(os.path.join(os.curdir, 'input.txt')).strip()
 
     data = data.split('\n')
-    print(data)
 
     ans = 0
 
@@ -20,13 +19,32 @@ def part1():
 
     for index in range(len(data)):
         line = data[index]
-        # arr.append(int(line))
-        print(line)
+        arr.append(int(line))
+
+    for i in range(1, len(arr)):
+        if arr[i] > arr[i - 1]:
+            ans += 1
         
     return ans 
 
 def part2():
-    pass
+    data = getFile(os.path.join(os.curdir, 'input.txt')).strip()
+
+    data = data.split('\n')
+
+    ans = 0
+
+    arr = []
+
+    for index in range(len(data)):
+        line = data[index]
+        arr.append(int(line))
+
+    for i in range(3, len(arr)):
+        if arr[i] > arr[i - 3]:
+            ans += 1
+        
+    return ans 
 
 print(f'part1: {part1()}')
 print(f'part2: {part2()}')
