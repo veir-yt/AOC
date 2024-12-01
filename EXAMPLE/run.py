@@ -26,21 +26,7 @@ def part1():
     return ans 
 
 def part2():
-    data = getFile(os.path.join(os.curdir, 'input.txt')).strip()
-
-    data = data.split('\n')
-    print(data)
-
-    ans = 0
-
-    arr = []
-
-    for index in range(len(data)):
-        line = data[index]
-        # arr.append(int(line))
-        print(line)
-        
-    return ans 
+    pass
 
 print(f'part1: {part1()}')
 print(f'part2: {part2()}')
