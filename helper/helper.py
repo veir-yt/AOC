@@ -85,3 +85,10 @@ dUP = 0
 dRIGHT = 1
 dDOWN = 2
 dLEFT = 3
+
+def bound(v, l, u):
+    if v < l:
+        return l
+    if v > u:
+        return u
+    return v
