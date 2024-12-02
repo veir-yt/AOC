@@ -20,7 +20,7 @@ def part1():
     h = {}
 
     for index in range(len(data)):
-        line = data[index]
+        line = data[index].split()
         # arr.append(int(line))
         
     return ans 
