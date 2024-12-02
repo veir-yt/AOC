@@ -8,6 +8,10 @@ from helper.helper import getFile, mymap, myfilter, download_input, hash_string,
 
 download_input(os.path.abspath(os.curdir))
 
+# didn't split the right way
+
+# (714, 698)
+
 def part1():
     data = getFile(os.path.join(os.curdir, 'input.txt')).strip()
 
