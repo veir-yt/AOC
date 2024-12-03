@@ -25,4 +25,4 @@ def part1():
         
     return ans 
 
-print(f'part1: {part1()}')
+print(f'ans: {part1()}')
