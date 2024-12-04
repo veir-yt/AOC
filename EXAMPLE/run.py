@@ -21,6 +21,7 @@ def part1():
 
     for index in range(len(data)):
         line = data[index].split()
+        # line = [int(x) for x in data[index].split()]
         # arr.append(int(line))
         
     return ans 
