@@ -92,3 +92,12 @@ def bound(v, l, u):
     if v > u:
         return u
     return v
+
+def get_grid(data):
+    h = {}
+
+    for i in range(len(data)):
+        for j in range(len(data[0])):
+            h[(i,j)] = data[i][j]
+
+    return h
